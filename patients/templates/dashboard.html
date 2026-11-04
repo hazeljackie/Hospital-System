@@ -1,0 +1,45 @@
+{% extends "base.html" %} {% block title %}Dashboard | Medical Clinic{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2 class="mb-4">Dashboard</h2>
+
+    <div class="row g-3 mb-4">
+        <div class="col-md-4">
+            <div class="card text-bg-primary">
+                <div class="card-body">
+                    <h5 class="card-title">Appointments</h5>
+                    <p class="display-6 mb-0">3</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-bg-success">
+                <div class="card-body">
+                    <h5 class="card-title">Next Visit</h5>
+                    <p class="fs-5 mb-0">12 Nov 2026</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-bg-info">
+                <div class="card-body">
+                    <h5 class="card-title">Prescriptions</h5>
+                    <p class="display-6 mb-0">2</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card shadow-sm">
+        <div class="card-header">
+            <h5 class="mb-0">Quick Actions</h5>
+        </div>
+        <div class="card-body">
+            <a href="{% url 'booking' %}" class="btn btn-primary me-2">Book Appointment</a>
+            <a href="{% url 'profile' %}" class="btn btn-outline-secondary">View Profile</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends "base.html" %} 
+{% block title %}Home | Medical Clinic{% endblock %} 
+{% block content %}
+<!-- Homepage Banner -->
+<section class="hero">
+    <div class="hero-overlay">
+        <div class="hero-content">
+            <h1>Welcome to Medical Clinic</h1>
+
+            <h3>Your Health, Our Priority</h3>
+
+            <p>
+                Providing quality, compassionate and affordable
+                healthcare services for you and your family.
+            </p>
+
+            <a href="{% url 'booking' %}" class="btn btn-primary btn-lg">
+                Book an Appointment
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Our Services -->
+<section class="container my-5">
+    <h2 class="text-center mb-4">Our Services</h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card service-card h-100">
+                <div class="card-body text-center">
+                    <h4>Patient Care</h4>
+                    <p>Professional and compassionate care for every patient.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card service-card h-100">
+                <div class="card-body text-center">
+                    <h4>Appointments</h4>
+                    <p>Book and manage your medical appointments easily.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card service-card h-100">
+                <div class="card-body text-center">
+                    <h4>Medical Services</h4>
+                    <p>Access quality medical services from our healthcare team.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- About Us -->
+<section class="about-section text-center py-5">
+    <div class="container">
+        <h2>About Medical Clinic</h2>
+        <p>
+            At Medical Clinic, we are dedicated to providing top-notch healthcare services to our community. 
+            Our team of experienced medical professionals is committed to ensuring the well-being of our patients 
+            through personalized care and advanced medical treatments.
+        </p>
+    </div>
+</section>
+
+
+
+{% endblock %}
